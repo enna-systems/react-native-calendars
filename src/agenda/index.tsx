@@ -339,7 +339,7 @@ export default class Agenda extends Component<AgendaProps, State> {
         ...reservationListProps,
         selectedDay: this.state.selectedDay,
         topDay: this.state.topDay,
-        onDayChange: this.onDayChange,
+        onDayChange: this.onDayChange
       });
     }
 
@@ -377,7 +377,7 @@ export default class Agenda extends Component<AgendaProps, State> {
 
   renderKnob() {
     const {showClosingKnob, hideKnob, renderKnob} = this.props;
-    let knob: JSX.Element | null = <View style={this.style.knobContainer} />;
+    let knob: JSX.Element | null = <View style={this.style.knobContainer}/>;
 
     if (!hideKnob) {
       const knobView = renderKnob ? renderKnob() : <View style={this.style.knob}/>;
@@ -456,7 +456,7 @@ export default class Agenda extends Component<AgendaProps, State> {
     const scrollPadPosition = (shouldAllowDragging ? HEADER_HEIGHT : openCalendarScrollPadPosition) - KNOB_HEIGHT;
     const scrollPadStyle = {
       height: KNOB_HEIGHT,
-      top: scrollPadPosition,
+      top: scrollPadPosition
     };
 
     return (
