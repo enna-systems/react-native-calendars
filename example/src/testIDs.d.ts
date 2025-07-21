@@ -5,6 +5,7 @@ declare const _default: {
         CALENDAR_LIST: string;
         HORIZONTAL_LIST: string;
         AGENDA: string;
+        AGENDA_INFINITE: string;
         EXPANDABLE_CALENDAR: string;
         WEEK_CALENDAR: string;
         TIMELINE_CALENDAR: string;
